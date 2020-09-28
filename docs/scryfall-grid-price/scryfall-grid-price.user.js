@@ -54,7 +54,7 @@ if (document.querySelector('[name=as]').value === 'checklist') {
       document.querySelector('.checklist').style.display = 'block';
       document.querySelector('.checklist tbody').style.display = 'block';
       document.querySelector('.checklist-wrapper').style.maxWidth = 'none';
-      document.querySelector('.checklist-wrapper').style.margin = '0 40px';
+      document.querySelector('.checklist-wrapper').style.padding = '0 40px';
       document.querySelector('.checklist').style.maxWidth = 'none';
       items.forEach(el => {
         el.style.display = 'inline-block';
