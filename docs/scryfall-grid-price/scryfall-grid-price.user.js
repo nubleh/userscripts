@@ -54,7 +54,7 @@ if (document.querySelector('[name=as]').value === 'checklist') {
       document.querySelector('.checklist').style.display = 'block';
       document.querySelector('.checklist tbody').style.display = 'block';
       document.querySelector('.checklist-wrapper').style.maxWidth = 'none';
-      document.querySelector('.checklist-wrapper').style.padding = '0 40px';
+      document.querySelector('.checklist-wrapper').style.padding = '0 25px';
       document.querySelector('.checklist').style.maxWidth = 'none';
       items.forEach(el => {
         el.style.display = 'inline-block';
@@ -66,6 +66,12 @@ if (document.querySelector('[name=as]').value === 'checklist') {
             c.style.display = 'block';
           }
           c.style.lineHeight = '0.4em';
+          ((eee) => {
+            if (eee) {
+              eee.style.fontSize = '3vh';
+              eee.style.lineHeight = '3vh';
+            }
+          })(c.querySelector('.currency-usd'));
           c.style.width = '200px';
         });
         el.children[el.children.length - 1].style.display = '';
